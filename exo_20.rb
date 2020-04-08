@@ -2,10 +2,9 @@ puts " Salut ! Choisi un nombre entre 1 et 25 stp."
 print ">"
 number = gets.chomp.to_i
 
-a = "#"
+puts " Voici la pyramide :"
 j = 0
-until j >= number
-    j +=1
-    puts " Voici la pyramide :"
-    puts "#{j}*a
-end
+    while j < number
+        j += 1
+        puts  "#" * j
+    end
