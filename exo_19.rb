@@ -15,9 +15,11 @@ until j >= 50
     false_emails << "jean.dupont.#{j}@email.fr"
 end
 
+i=1
 false_emails.each do |x|
-    when i % 2 == 0
+	if i % 2 == 0
         puts x
     end
+	i+=1
 end
 
